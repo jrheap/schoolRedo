@@ -1,0 +1,31 @@
+body{
+    width:1080px;
+  margin: auto;
+  font-size: 25px;
+}
+header{
+font-size: 40px;
+}
+.fixed{
+    padding: 80px;
+    background-color: blue;
+    position: fixed;
+    top: 0%;
+  left: 0%;
+}
+
+.relative{
+    padding: 100px;
+    background-color: salmon;
+    position: relative;
+}
+
+.absolute{
+    padding: 40px;
+    background-color: olivedrab;
+    position: absolute;
+    top: 81.5%;
+  left: 67%;
+
+}
+
