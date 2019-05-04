@@ -1,0 +1,82 @@
+body{
+    /* width: 960px; */
+    margin: auto;
+    font-family:'ZCOOL KuaiLe', cursive;;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777777;
+}
+
+nav{
+    display: flex;
+    flex-flow: wrap;
+    background-color: whitesmoke;
+    flex-grow: 9;
+    justify-content: space-around;
+    background: rgba(204, 204, 204, 0.1);
+
+}
+.name{
+    display: flex;
+    box-shadow: 5px 5px 5px grey;
+    color: black;
+    padding: 30px;
+    justify-content: space-around;
+    background-color:silver;
+    margin: 0;
+    width: 250px;
+    font-size: 60px;
+    padding-top: 37px;
+}
+
+.link{
+    display: flex;
+    padding: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* a:link {
+    text-decoration: none;
+  } */
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: green;
+  }
+  
+.container {
+    width: 1141px; 
+    height: 550px;
+    background: rgba(204, 204, 204, 0.5);
+    margin: 0 auto;
+    margin-top: 50px;
+}
+header{
+    font-size: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+#bio{
+    display: flex;
+    flex-flow: nowrap
+}
+
+img{
+    margin: 12px;
+    height: 300px;
+    width: 200%;
+    border-radius: 50%;
+}
+p{
+    margin-top: 15px;
+    color: black;
+
+}
