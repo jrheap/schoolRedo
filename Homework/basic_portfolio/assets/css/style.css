@@ -1,12 +1,47 @@
 body{
     /* width: 960px; */
+    /* background-image: url(../img/1.jpg), url(../img/tree.jpg); */
+    background-repeat: no-repeat;
     margin: auto;
     font-family:'ZCOOL KuaiLe', cursive;;
     font-size: 18px;
     line-height: 34px;
     color: #777777;
+    margin-top: 135px;
+    
+}
+#BG1{
+  background-image: url(../img/1.jpg);
+  /* padding: 50px; */
+  height: 701px;
+    margin-top: -140px;
+    padding-top: 105px;
+}
+#BG2{
+  background-image: url(../img/grey.jpg);
+  background-repeat: no-repeat;
+  height: 1390px;
+  margin-bottom: 120px;
+  padding-top: 1px;
+  padding-bottom: 78px;
+  /* margin-top: 0px; */
+}
+#BG3{
+  background-image: url(../img/dark.jpg);
+  background-repeat: no-repeat;
+  margin-top: -149px;
+  padding-top: 65px;
+  height: 700px;
 }
 
+.wrapper{
+  width: 1141px; 
+    /* height: 100%; */
+    background: rgba(204, 204, 204, 0.5);
+    margin: 0 auto;
+    margin-top: 98px;
+    
+}
 nav{
     display: flex;
     flex-flow: wrap;
@@ -14,41 +49,45 @@ nav{
     flex-grow: 9;
     justify-content: space-around;
     background: rgba(204, 204, 204, 0.1);
+    height: 75px;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    margin-top: 3px;
 
 }
+
 .name{
     display: flex;
     box-shadow: 5px 5px 5px grey;
-    color: black;
-    padding: 30px;
+    color: rgb(82, 81, 81);
+    /* padding: 30px; */
     justify-content: space-around;
     background-color:silver;
-    margin: 0;
+    margin-right: 130px;
     width: 250px;
-    font-size: 60px;
-    padding-top: 37px;
+    font-size: 55px;
+    padding-top: 20px;
+    height: 57px;
 }
 
 .link{
     display: flex;
-    padding: 30px;
-    margin-top: 20px;
+    padding: 23px;
     text-decoration: none;
 }
 
-/* a:link {
-    text-decoration: none;
-  } */
-  
-  /* visited link */
-  a:visited {
-    color: black;
+a:link {
+    /* text-decoration: none; */
   }
+  
+a{
+    color: var(--mainColor);
+  text-decoration: none;
+}
   
   /* mouse over link */
-  a:hover {
-    color: green;
-  }
+
   
 .container {
     width: 1141px; 
@@ -62,6 +101,8 @@ header{
     padding-top: 50px;
     padding-bottom: 20px;
     padding-left: 20px;
+    color: rgb(82, 81, 81);
+
 }
 
 #bio{
@@ -69,14 +110,151 @@ header{
     flex-flow: nowrap
 }
 
-img{
+#bio_image{
     margin: 12px;
     height: 300px;
     width: 200%;
     border-radius: 50%;
 }
 p{
-    margin-top: 15px;
+    margin-top: 0px;
     color: black;
 
+}
+
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	font-size:18px;
+}
+a:hover{
+	color:#175e0364;
+}
+a.before:before,a.after:after{
+  content: "";
+  transition:0.5s all ease;
+  -webkit-backface-visibility:hidden;
+          backface-visibility:hidden;
+  position:absolute;
+}
+a.before:before{
+  top:-0.25em;
+}
+a.after:after{
+  bottom:-0.25em;
+}
+a.before:before,a.after:after{
+  height:2px;
+  height:0.25rem;
+  width:0;
+  background:#175e0364;
+}
+a.third:after{
+  left:50%;
+  -webkit-transform:translateX(-50%);
+          transform:translateX(-50%);
+}
+
+a.before:hover:before,a.after:hover:after{
+  width:100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.container1 {
+  padding: 2px 16px;
+  
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+#family{
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+ .family1, #harry {
+   display: flex;
+background-color: blue;
+height: 200px;
+order: 1;
+ }
+ .family2, #cousin{
+  display: flex;
+  background-color: blue;
+  height: 200px;
+  order: 2;
+}
+.family2{
+  display: flex;
+  background-color: blue;
+  height: 200px;
+}
+.family3, #yeti{
+  display: flex;
+  background-color: blue;
+  height: 200px;
+  order: 3;
+}
+.family4{
+  display: flex;
+  background-color: blue;
+  height: 200px;
+}
+.family5{
+  display: flex;
+  background-color: blue;
+  height: 200px;
+}
+.family6{
+  display: flex;
+  background-color: blue;
+  height: 200px;
+}
+
+.testing1 {
+  margin-left: 120px;
+}
+
+.small{
+  width: 457px;
+  height: 303px;
+}
+
+.yeti{
+  width: 457px;
+
+}
+
+.uncle {
+  width: 457px;
+}
+
+.mom{
+  width: 457px;
+}
+.bor{
+  width: 457px;
+}
+
+b{
+  color: green;
+  font-size: 30px;
+}
+h5{
+  text-align: center;
+  margin-top: 200px;
+  font-size: 24px;
 }
