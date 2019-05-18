@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Favorite TV Shows</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+      // creates an empty array and an emtpy varuable to be set later
+      var favTVshows = [];
+      var tvShow;
+
+      // For Loop Elements Repeats ??? Times
+      for (var i = 1; i < 4; i++) {
+
+        // Stores users awnsers into a var
+        tvShow = prompt("What's your #" + i + " favorite TV show?");
+
+        // adds user imput in the array
+        favTVshows.push(tvShow);
+      }
+
+      // loops through the favtvshows
+      for (var j = 0; j < favTVshows.length; j++) {
+
+        // alerts the tv shows
+        alert(favTVshows[j]);
+      }
+
+    </script>
+
+  </body>
+</html>
